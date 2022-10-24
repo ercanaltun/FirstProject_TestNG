@@ -1,10 +1,9 @@
 package utilities;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.*;
+import pages.PearlyMarketPageErcan;
 
 import java.time.Duration;
 
@@ -19,6 +18,9 @@ public class TestBaseCross {
         driver = CrossDriver.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+
+
 
     }
 
